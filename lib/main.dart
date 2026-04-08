@@ -49,16 +49,30 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Paralayang Batu adalah destinasi wisata olahraga ekstrem populer di Gunung Banyak, Kota Batu, Jawa Timur'
+        'yang menawarkan sensasi terbang bebas dari ketinggian 1.315 mdpl.'
+        'Pengunjung dapat menikmati pemandangan memukau kota Batu dan Malang,'
+        'terutama saat sore hari, ditemani instruktur profesional.'
+        'Selamat menikmati pengalaman tak terlupakan di Paralayang Batu.\n'
+        'author: Fiza Rahmatus Sholikha - 244107060109.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Fiza Rahmatus Sholikha dan 244107060109',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
         body: Column(
           children: [
-            titleSection,
-            buttonSection
-          ],
-        )
+            titleSection, 
+            buttonSection,
+            textSection,
+          ]
+        ),
       ),
     );
   }
